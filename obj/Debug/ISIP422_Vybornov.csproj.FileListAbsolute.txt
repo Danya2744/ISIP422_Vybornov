@@ -1,0 +1,14 @@
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\MainWindow.g.cs
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\App.g.cs
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov_MarkupCompile.cache
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\bin\Debug\ISIP422_Vybornov.exe.config
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\bin\Debug\ISIP422_Vybornov.exe
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\bin\Debug\ISIP422_Vybornov.pdb
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\MainWindow.baml
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.g.resources
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.Properties.Resources.resources
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.csproj.GenerateResource.cache
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.csproj.CoreCompileInputs.cache
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.exe
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.pdb
+C:\Users\Danya Vybornov\Desktop\Учёба\4 курс\Инструментальные средства разработки ПО\ISIP422_Vybornov\obj\Debug\ISIP422_Vybornov.csproj.AssemblyReference.cache

@@ -1,12 +1,71 @@
 ﻿<Window x:Class="ISIP422_Vybornov.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ISIP422_Vybornov"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Учёт товаров в магазине" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Grid.Column="0" Header="Список товаров">
+            <DataGrid ItemsSource="{Binding Products}" 
+                      SelectedItem="{Binding SelectedProduct}"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Код" Binding="{Binding Code}" Width="*"/>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding Price, StringFormat=C}" Width="*"/>
+                    <DataGridTextColumn Header="Кол-во" Binding="{Binding Quantity}" Width="*"/>
+                    <DataGridTextColumn Header="Стоимость" Binding="{Binding TotalValue, StringFormat=C}" Width="*"/>
+                    <DataGridCheckBoxColumn Header="В наличии" Binding="{Binding IsAvailable}" Width="*"/>
+                    <DataGridTextColumn Header="Категория" Binding="{Binding Category}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+
+        <GroupBox Grid.Column="2" Header="Управление товарами">
+            <StackPanel Margin="5">
+                <TextBlock Text="Добавить новый товар:" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Название:" Margin="0,5"/>
+                <TextBox Text="{Binding NewProductName}" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Цена:" Margin="0,5"/>
+                <TextBox Text="{Binding NewProductPrice}" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Количество:" Margin="0,5"/>
+                <TextBox Text="{Binding NewProductQuantity}" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Категория:" Margin="0,5"/>
+                <ComboBox ItemsSource="{Binding Categories}" 
+                          SelectedItem="{Binding NewProductCategory}"
+                          Margin="0,0,0,15"/>
+
+                <Button Content="Добавить товар" 
+                        Command="{Binding AddProductCommand}"
+                        Background="LightGreen"
+                        Margin="0,0,0,10"
+                        Height="30"/>
+
+                <Button Content="Удалить выбранный" 
+                        Command="{Binding RemoveProductCommand}"
+                        Background="LightCoral"
+                        Height="30"/>
+
+                <GroupBox Header="Статистика" Margin="0,20,0,0">
+                    <StackPanel>
+                        <TextBlock Text="{Binding TotalProductsText}" Margin="5"/>
+                        <TextBlock Text="{Binding TotalValueText}" Margin="5"/>
+                        <TextBlock Text="{Binding AvailableProductsText}" Margin="5"/>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
